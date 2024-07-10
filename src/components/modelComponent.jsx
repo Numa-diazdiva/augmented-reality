@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 const ARView = dynamic(() => import('react-three-mind').then((mod) => mod.ARView), { ssr: false });
 const ARAnchor = dynamic(() => import('react-three-mind').then((mod) => mod.ARAnchor), { ssr: false });
 
-export default function ModelComponent({ model, target=`/targets.mind` }) {
+export default function ModelComponent({ model, target=`/targets.mind`, scale = 1, position = [0,0,0], ligths}) {
   
   return(
     <div className="w-full h-full">
@@ -18,7 +18,8 @@ export default function ModelComponent({ model, target=`/targets.mind` }) {
           <ARAnchor
             target={0}
             >
-            { model }
+            <group scale={scale} position={position}> { model } </group>
+            {ligths}
           </ARAnchor>
         </ARView>
 

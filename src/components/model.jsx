@@ -2,7 +2,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useLoader } from "@react-three/fiber";
 
 export default function Model({
-  modelUrl="./black_table/scene.gltf"
+  modelUrl=""
 }) {
   const gltf = useLoader(GLTFLoader, modelUrl);
 
