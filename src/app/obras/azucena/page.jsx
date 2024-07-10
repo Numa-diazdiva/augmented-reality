@@ -6,7 +6,7 @@ import Model from "@/components/model";
 export default function Page() {
 
   return (
-    <div className="flex min-h-screen min-w-screen flex-col items-center justify-center">
+    <div className="flex min-h-screen min-w-screen flex-col items-center justify-start">
       <ModelComponent 
         model={<Model modelUrl="/models/azucenas.glb" />} 
         target={"/targets/azucenas.mind"}
