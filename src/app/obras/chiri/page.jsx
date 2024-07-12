@@ -10,8 +10,8 @@ export default function Page() {
       <ModelComponent 
         model={<Model modelUrl="/models/Chiri.glb" />} 
         target={"/targets/chiri.mind"}
-        scale={0.5}
-        position={[0,0,0]}
+        scale={0.4}
+        position={[0,0.5,0]}
         ligths={<SceneLights />}  
         />
     </div>

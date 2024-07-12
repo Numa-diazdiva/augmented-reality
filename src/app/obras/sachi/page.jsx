@@ -23,5 +23,6 @@ function SceneLights() {
   <>
     <directionalLight position={[0,30,0]} intensity={1.5}/> 
     <directionalLight position={[0,-30,0]} intensity={1.5}/> 
+    <directionalLight position={[0,-30,0]} intensity={1.5}/> 
   </>
 )}
