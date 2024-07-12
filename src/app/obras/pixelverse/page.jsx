@@ -11,7 +11,7 @@ export default function Page() {
         model={<Model modelUrl="/models/pixelverse.glb" />} 
         target={"/targets/pixelverse.mind"}
         scale={1}
-        position={[0,0,0]}
+        position={[0,2,-2]}
         ligths={<SceneLights />}  
         />
     </div>
@@ -23,5 +23,7 @@ function SceneLights() {
   <>
     <directionalLight position={[0,30,0]} intensity={1.5}/> 
     <directionalLight position={[0,-30,0]} intensity={1.5}/> 
+    <directionalLight position={[0,0,30]} intensity={1.5}/> 
+
   </>
 )}
