@@ -10,8 +10,8 @@ export default function Page() {
       <ModelComponent 
         model={<Model modelUrl="/models/turtle.glb" />} 
         target={"/targets/turtle.mind"}
-        scale={1}
-        position={[0,0,0]}
+        scale={1.3}
+        position={[0,2,0]}
         ligths={<SceneLights />}  
         />
     </div>
@@ -23,5 +23,6 @@ function SceneLights() {
   <>
     <directionalLight position={[0,30,0]} intensity={1.5}/> 
     <directionalLight position={[0,-30,0]} intensity={1.5}/> 
+    <directionalLight position={[0,0,30]} intensity={1.5}/> 
   </>
 )}

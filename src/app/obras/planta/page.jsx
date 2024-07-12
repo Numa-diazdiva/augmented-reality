@@ -11,7 +11,7 @@ export default function Page() {
         model={<Model modelUrl="/models/planta.glb" />} 
         target={"/targets/planta.mind"}
         scale={1}
-        position={[0,0,0]}
+        position={[0,1,0]}
         ligths={<SceneLights />}  
         />
     </div>

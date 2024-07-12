@@ -10,8 +10,8 @@ export default function Page() {
       <ModelComponent 
         model={<Model modelUrl="/models/CONTEMPLATION/contemplacion_suscrita.gltf" />} 
         target={"/targets/contemplation.mind"}
-        scale={1}
-        position={[0,0,0]}
+        scale={0.7}
+        position={[0,1,0]}
         ligths={<SceneLights />}  
         />
     </div>

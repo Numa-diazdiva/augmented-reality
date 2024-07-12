@@ -10,8 +10,8 @@ export default function Page() {
       <ModelComponent 
         model={<Model modelUrl="/models/sachi.glb" />} 
         target={"/targets/sachi.mind"}
-        scale={2}
-        position={[0,2,-2]}
+        scale={1.3}
+        position={[0,3,-2]}
         ligths={<SceneLights />}  
         />
     </div>

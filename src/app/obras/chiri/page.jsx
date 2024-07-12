@@ -10,7 +10,7 @@ export default function Page() {
       <ModelComponent 
         model={<Model modelUrl="/models/Chiri.glb" />} 
         target={"/targets/chiri.mind"}
-        scale={1}
+        scale={0.8}
         position={[0,0,0]}
         ligths={<SceneLights />}  
         />
@@ -23,5 +23,6 @@ function SceneLights() {
   <>
     <directionalLight position={[0,30,0]} intensity={1.5}/> 
     <directionalLight position={[0,-30,0]} intensity={1.5}/> 
+    <directionalLight position={[0,0,30]} intensity={1.5}/> 
   </>
 )}
