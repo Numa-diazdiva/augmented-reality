@@ -8,10 +8,10 @@ export default function Page() {
   return (
     <div className="flex min-h-screen min-w-screen flex-col items-center justify-start">
       <ModelComponent 
-        model={<Model modelUrl="/models/agua.glb" />} 
+        model={<Model modelUrl="/models/agua.glb" rotation={[0, -Math.PI/2, 0]} animate={true} /> }  
         target={"/targets/agua.mind"}
-        scale={1}
-        position={[0,0,0]}
+        scale={0.7}
+        position={[0,1,0]}
         ligths={<SceneLights />}  
         />
     </div>
