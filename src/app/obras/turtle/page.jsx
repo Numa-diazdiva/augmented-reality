@@ -10,7 +10,7 @@ export default function Page() {
       <ModelComponent 
         model={<Model modelUrl="/models/turtle.glb" />} 
         target={"/targets/turtle.mind"}
-        scale={1.3}
+        scale={1.1}
         position={[0,2,0]}
         ligths={<SceneLights />}  
         />

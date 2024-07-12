@@ -10,8 +10,8 @@ export default function Page() {
       <ModelComponent 
         model={<Model modelUrl="/models/planta.glb" />} 
         target={"/targets/planta.mind"}
-        scale={1}
-        position={[0,1,0]}
+        scale={1.2}
+        position={[0,1.5,0]}
         ligths={<SceneLights />}  
         />
     </div>
@@ -23,7 +23,7 @@ function SceneLights() {
   <>
     <directionalLight position={[0,30,0]} intensity={1.5}/> 
     <directionalLight position={[0,-30,0]} intensity={1.5}/> 
-    <directionalLight position={[0,0,30]} intensity={1.5}/> 
+    <directionalLight position={[0,0,30]} intensity={2}/> 
 
   </>
 )}
