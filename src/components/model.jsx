@@ -4,7 +4,8 @@ import { useLoader, useFrame } from "@react-three/fiber";
 import { damp } from 'three/src/math/MathUtils';
 
 export default function Model({
-  modelUrl=""
+  modelUrl="",
+  rotation=[-0.01, 0.02, -0.1]
 }) {
   const gltf = useLoader(GLTFLoader, modelUrl);
   const modelRef = useRef();
@@ -19,9 +20,9 @@ export default function Model({
   return (
     <group>
       <primitive
-        scale={0.75}
-        position={[0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={1}
+        position={[0, -3.5, -1.5]}
+        rotation={rotation}
         object={gltf.scene}
         ref={modelRef}
       />
