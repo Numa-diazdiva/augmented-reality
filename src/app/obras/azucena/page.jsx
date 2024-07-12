@@ -10,8 +10,8 @@ export default function Page() {
       <ModelComponent 
         model={<Model modelUrl="/models/azucenas.glb" />} 
         target={"/targets/azucenas.mind"}
-        scale={0.005}
-        position={[0,0,0]}
+        scale={0.003}
+        position={[0,-1,0]}
         ligths={<SceneLights />}  
         />
     </div>

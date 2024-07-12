@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <div className="flex min-h-screen min-w-screen flex-col items-center justify-start">
       <ModelComponent 
-        model={<Model modelUrl="/models/bicho.glb" rotation={[0,-Math.PI/2,0]} />} 
+        model={<Model modelUrl="/models/bicho.glb" rotation={[0,-Math.PI/2,0]} animate={true} />} 
         target={"/targets/bicho.mind"}
         scale={8}
         position={[0,16,-20]}

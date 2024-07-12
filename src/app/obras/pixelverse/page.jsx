@@ -10,7 +10,7 @@ export default function Page() {
       <ModelComponent 
         model={<Model modelUrl="/models/pixelverse.glb" />} 
         target={"/targets/pixelverse.mind"}
-        scale={1}
+        scale={0.75}
         position={[0,2,-2]}
         ligths={<SceneLights />}  
         />
