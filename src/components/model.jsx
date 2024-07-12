@@ -5,15 +5,19 @@ import { damp } from 'three/src/math/MathUtils';
 
 export default function Model({
   modelUrl="",
-  rotation=[-0.01, 0.02, -0.1]
+  rotation=[-0.01, 0.02, -0.1],
+  animate=false,
+  rotationSpeed=1
 }) {
   const gltf = useLoader(GLTFLoader, modelUrl);
   const modelRef = useRef();
 
   useFrame(
     (state, delta) => {
-      const modelRotationY = modelRef.current.rotation.y;
-      modelRef.current.rotation.y = damp(modelRotationY, modelRotationY + 1, 1, delta);
+      if (animate) {
+        const modelRotationY = modelRef.current.rotation.y;
+        modelRef.current.rotation.y = damp(modelRotationY, modelRotationY + rotationSpeed, 1, delta);
+      }
     }
   );
 
