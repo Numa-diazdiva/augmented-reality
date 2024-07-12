@@ -10,8 +10,8 @@ export default function ModelComponent({ model, target=`/targets.mind`, scale = 
     <div className="w-full h-full">
         <ARView
           imageTargets={target}
-          filterMinCF={0.1}
-          filterBeta={10000}
+          filterMinCF={0.0001}
+          filterBeta={0.1}
           missTolerance={10}
           warmupTolerance={0}
         >

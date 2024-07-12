@@ -11,7 +11,7 @@ export default function Page() {
         model={<Model modelUrl="/models/sachi.glb" />} 
         target={"/targets/sachi.mind"}
         scale={2}
-        position={[0,0,0]}
+        position={[0,2,-2]}
         ligths={<SceneLights />}  
         />
     </div>
