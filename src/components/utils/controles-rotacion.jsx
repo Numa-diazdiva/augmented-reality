@@ -1,3 +1,4 @@
+'use client';
 import { useMemo } from 'react';
 import { useThree } from '@react-three/fiber';
 import { animated, useSpring } from '@react-spring/three';
