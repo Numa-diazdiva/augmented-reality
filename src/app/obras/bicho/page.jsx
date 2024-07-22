@@ -10,7 +10,7 @@ export default function Page() {
       <ModelComponent 
         model={<Model modelUrl="/models/bicho.glb" rotation={[0,-Math.PI/2,0]} animate={true} />} 
         target={"/targets/bicho.mind"}
-        scale={8}
+        scale={10}
         position={[0,16,-20]}
         ligths={<SceneLights />}  
         />

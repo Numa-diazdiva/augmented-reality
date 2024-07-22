@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useLoader, useFrame } from "@react-three/fiber";
 import { damp } from 'three/src/math/MathUtils';
+import ControlesRotacion from "./utils/controles-rotacion";
 
 export default function Model({
   modelUrl="",
@@ -22,14 +23,15 @@ export default function Model({
   );
 
   return (
-    <group>
+    <group position={[0, -3.5, -1.5]}>
+      <ControlesRotacion>
       <primitive
         scale={1}
-        position={[0, -3.5, -1.5]}
         rotation={rotation}
         object={gltf.scene}
         ref={modelRef}
       />
+      </ControlesRotacion>
     </group>
   );
 };
