@@ -24,14 +24,14 @@ export default function Model({
 
   return (
     <group position={[0, -3.5, -1.5]}>
-      <ControlesRotacion>
+      {/* <ControlesRotacion> */}
       <primitive
         scale={1}
         rotation={rotation}
         object={gltf.scene}
         ref={modelRef}
       />
-      </ControlesRotacion>
+      {/* </ControlesRotacion> */}
     </group>
   );
 };
